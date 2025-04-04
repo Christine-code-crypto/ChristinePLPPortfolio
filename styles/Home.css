@@ -1,0 +1,143 @@
+/* ===== HOME SECTION ===== */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--gray-bg);
+}
+
+.home .container {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  gap: 1rem; /* Reduced space between text and image */
+}
+
+/* Profile Image */
+.home-image img {
+  width: 240px; 
+  height: 240px;
+  border-radius: 50%; /* Ensures circular image */
+  object-fit: cover;
+  border: 4px solid green;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Content */
+.home-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.home h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.home h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: green;
+  line-height: 1.3;
+}
+.home h1 span {
+  color: var(--primary);
+}
+
+.home p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+/* Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+/* Button Hover Effects */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .home .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem; /* Reduced gap */
+    padding: 2rem 4rem;
+    justify-content: center; /* Ensures centered alignment */
+  }
+  
+  .home-content {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .cta-buttons {
+    justify-content: flex-start;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 992px) {
+  .home .container {
+    gap: 1rem; /* Keeps text and image closer */
+  }
+
+  .home-image img {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home p {
+    font-size: 1.3rem;
+  }
+}
