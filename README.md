@@ -33,7 +33,7 @@ I've also integrated **Google Fonts** and **Font Awesome** for enhanced typograp
 1. **Clone the repository**
 
    ```bash
-   git clone git@github.com:Christine-code-crypto/ChristinePLPPortfolio.git
+   git clone https://github.com/Christine-code-crypto/ChristinePLPPortfolio.git
 
    ```
 
